@@ -1,0 +1,39 @@
+.section-title {
+    color: var(--title-text-color);
+    text-align: center;
+
+    font-size: 36px;
+    line-height: 1.16;
+
+    margin-bottom: 50px;
+}
+
+.work {
+    &__list {
+            display: flex;
+        }
+    
+    &__item {
+        position: relative;
+    }
+
+    &__text {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+    
+        padding-top: 27px;
+        font-weight: 700;
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--background-color);
+        background-color: var(--work-background);
+    }
+
+    &__item+.work__item {
+        margin-left: 30px;
+    }
+}

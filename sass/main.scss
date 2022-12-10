@@ -1,0 +1,41 @@
+/**Палітра кольорів та шрифтів */
+@import "./utils/variables";
+
+/**visually-hidden */
+@import "./utils/visually-hidden";
+
+/**базові стилі */
+@import "./base/base";
+
+/**header*/
+@import "./components/header";
+
+/**logo */
+@import "./components/logo";
+
+/**hero */
+@import "./components/hero";
+
+/**button */
+@import "./components/button";
+
+/**переваги */
+@import "./components/advatage";
+
+/**section-work */
+@import "./components/section-work";
+
+/**section-team */
+@import "./components/section-team";
+
+/**clients */
+@import "./components/clients";
+
+/**footer */
+@import "./components/footer";
+
+/**portfolio */
+@import "./components/portfolio";
+
+/**backdrop */
+@import "./components/modals"

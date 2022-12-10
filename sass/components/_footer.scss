@@ -1,0 +1,171 @@
+.footer {
+    padding: 60px 0;
+    background: var(--footer-background);
+}
+
+.container-footer {
+    display: flex;
+}
+
+
+.logo__studio--footer {
+    color: var(--background-color);
+}
+
+.footer-address {
+    margin-top: 20px;
+
+    color: var(--background-color);
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+
+    &__item+.footer-address__item {
+            margin-top: 9px;
+    }
+
+    &__link {
+        color: var(--footer-contact-text);
+    
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        transition: color var(--timing-function);
+    }
+
+    &__link--white {
+        color: var(--background-color);
+    }
+
+    &__link {
+    
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    }
+}
+
+/**JOIN IN */
+.join {
+    display: flex;
+    flex-wrap: wrap;
+    width: 206px;
+    height: 80px;
+    margin-left: 70px;
+
+    &__title {
+            display: inline-block;
+    
+            color: var(--background-color);
+            font-size: 14px;
+    
+            margin-bottom: 20px;
+    }
+}
+
+
+.icon-list {
+    display: flex;
+
+    &__item {
+            display: flex;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color: var(--footer-icon);
+    
+            align-items: center;
+            justify-content: center;
+    }
+
+    &__link {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    
+        transition: background-color var(--timing-function);
+    }
+
+    &__link {
+    
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+        }
+    }
+
+    &__item+.icon-list__item {
+        margin-left: 10px;
+    }
+}
+
+.footer-social {
+    fill: var(--background-color);
+}
+
+
+
+/**РОЗСИЛКА */
+.sign {
+    margin-left: 63px;
+
+    &__tittle {
+            display: flex;
+    
+            color: var(--background-color);
+            font-size: 14px;
+    
+            margin-bottom: 20px;
+    }
+
+    &__email {
+        width: 358px;
+        height: 50px;
+        padding-left: 16px;
+    
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    
+        box-sizing: border-box;
+    
+        background: none;
+        border: 1px solid var(--footer-email-border);
+        outline: none;
+        filter: drop-shadow(var(--modal-button-shadow));
+        border-radius: 4px;
+    }
+
+    &__email {
+        &::placeholder {
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+
+    &__button {
+        position: relative;
+        text-align: left;
+        width: 200px;
+        height: 50px;
+        margin-left: 12px;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 13px;
+        right: 28px;
+    }
+
+    &__list {
+        display: flex;
+    }
+}
