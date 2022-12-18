@@ -1,11 +1,9 @@
 .footer {
     padding: 60px 0;
     background: var(--footer-background);
+    text-align: center;
 }
 
-.container-footer {
-    display: flex;
-}
 
 
 .logo__studio--footer {
@@ -14,6 +12,7 @@
 
 .footer-address {
     margin-top: 20px;
+    margin-bottom: 60px;
 
     color: var(--background-color);
 
@@ -49,11 +48,11 @@
 
 /**JOIN IN */
 .join {
-    display: flex;
-    flex-wrap: wrap;
+
     width: 206px;
     height: 80px;
-    margin-left: 70px;
+    display: inline-block;
+    margin-bottom: 60px;
 
     &__title {
             display: inline-block;
@@ -112,21 +111,17 @@
 
 /**РОЗСИЛКА */
 .sign {
-    margin-left: 63px;
 
     &__tittle {
-            display: flex;
-    
             color: var(--background-color);
             font-size: 14px;
-    
+
             margin-bottom: 20px;
     }
 
     &__email {
         width: 358px;
         height: 50px;
-        padding-left: 16px;
     
         font-size: 16px;
         line-height: 20px;
@@ -134,6 +129,7 @@
         color: rgba(255, 255, 255, 0.6);
     
         box-sizing: border-box;
+        margin-bottom: 20px;
     
         background: none;
         border: 1px solid var(--footer-email-border);
@@ -165,7 +161,42 @@
         right: 28px;
     }
 
-    &__list {
-        display: flex;
-    }
+
 }
+
+        @media screen and (min-width: 767px) and (max-width: 1199px) {
+            .container-footer {
+                display: flex;
+                flex-wrap: wrap;
+            }
+    
+            .tumb {
+                margin-right: 165px;
+                margin-left: 76px;
+            }
+    
+            .sign {
+                margin: auto;
+            }
+    
+        }
+
+        @media screen and (min-width: 1200px) {
+
+            .footer {
+                text-align: left
+            }
+
+             .container-footer {
+                display: flex;
+                flex-wrap: nowrap;
+            }
+    
+            .join {
+                margin-left: 70px; 
+            }
+    
+            .sign {
+            margin-left: auto;
+            }
+        }

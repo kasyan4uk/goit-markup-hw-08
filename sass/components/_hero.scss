@@ -1,25 +1,73 @@
 .hero {
     text-align: center;
     background-image: linear-gradient(var(--hero-dark), var(--hero-dark)),
-        url(../../images/bg-hero.jpg);
+        url(../../images/Header\ mobile.jpg);
     background-color: var(--footer-background);
     background-position: center;
 
-    max-width: 1600px;
-    height: 600px;
+    max-width: 480px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
 
-    padding: 200px 0;
+    padding: 118px 0;
 
     &__title {
             color: var(--background-color);
-            max-width: 696px;
+            max-width: 360px;
             margin: 0 auto 30px;
     
             font-weight: 900;
-            font-size: 44px;
-            line-height: 1.36;
+            font-size: 26px;
+            line-height: 1.61;
             letter-spacing: 0.06em;
         }
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(var(--hero-dark), var(--hero-dark)),
+            url(../../images/Header\ mobile@2x.jpg);
+        }
 }
+
+@media screen and (min-width: 768px) {
+    .hero {
+        background-image: linear-gradient(var(--hero-dark), var(--hero-dark)),
+        url(../../images/Header\ tablet.jpg);
+
+        max-width: 768px;
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(var(--hero-dark), var(--hero-dark)),
+                    url(../../images/Header\ tablet@2x.jpg);
+            }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .hero {
+            background-image: linear-gradient(var(--hero-dark), var(--hero-dark)),
+                url(../../images/bg-hero.jpg);
+    
+            max-width: 1600px;
+            height: 600px;
+            padding: 200px 0;
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(var(--hero-dark), var(--hero-dark)),
+                    url(../../images/Header\ pc@2.jpg);
+            }
+
+             &__title {
+            max-width: 696px;
+
+            font-size: 44px;
+            line-height: 1.36;
+            }
+        }
+    }

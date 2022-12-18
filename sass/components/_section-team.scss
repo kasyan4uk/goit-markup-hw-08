@@ -1,57 +1,99 @@
 .section.team {
     background-color: var(--button-fiter-background);
 }
+.section-title {
+        color: var(--title-text-color);
+        text-align: center;
+    
+        font-size: 36px;
+        line-height: 1.16;
+    
+        margin-bottom: 50px;
+}
 
-.team{
-    &__list {
-            display: flex;
-            text-align: center;
-        }
-
+.team {
     &__item {
-        width: 270px;
-        margin-right: 30px;
-    
+        width: 100%;
+        margin-bottom: 30px;
+
         background: var(--background-color);
-    
+
         box-shadow: var(--team-shadow);
         border-radius: 0px 0px 4px 4px;
     }
 
-    &__item {
+        &__item {
         &:last-child {
-            margin-right: 0px;
+            margin-bottom: 0px;
         }
     }
 
     &__name {
+        text-align: center;
         color: var(--title-text-color);
         margin-top: 30px;
-    
+
         font-weight: 500;
         font-size: 16px;
         line-height: 1.18;
     }
 
     &__job {
+        text-align: center;
         margin-top: 10px;
         margin-bottom: 16px;
-    
+
         font-size: 16px;
         line-height: 1.18;
     }
 }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .team{
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        &__item {
+            margin-bottom: 0;
+            width: 354px;
+        }
+    }
+    }
+
+    @media screen and (min-width: 1200px) {
+    .team{
+        &__list {
+            display: flex;
+            text-align: center;
+        }
+
+        &__item {
+            margin-bottom: 0;
+            width: 270px;
+            margin-right: 30px;
+            margin-bottom: 0;
+        }
+
+        &__item {
+            &:last-child {
+                margin-right: 0px;
+        }
+    }
+    }
+}
+
 
 
 .social-list {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
+    padding-bottom: 24px;
 
     &_icon {
-            fill: var(--social-icon-grey);
-            transition: fill var(--timing-function);
+        fill: var(--social-icon-grey);
+        transition: fill var(--timing-function);
     }
 
     &__item {
@@ -65,7 +107,7 @@
         width: 44px;
         height: 44px;
         border-radius: 50%;
-    
+
         align-items: center;
         justify-content: center;
     }
@@ -77,12 +119,12 @@
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-    
+
         transition: background-color var(--timing-function);
     }
 
     &__item {
-    
+
         &:hover,
         &:focus {
             background-color: var(--accent-color);

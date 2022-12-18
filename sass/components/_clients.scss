@@ -1,9 +1,10 @@
 .clients {
-    padding: 94px;
 
     &__list {
-            display: flex;
             font-size: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
     }
 
     &__icon {
@@ -16,17 +17,13 @@
         align-items: center;
         justify-content: center;
     
-        width: 170px;
+        width: 210px;
         height: 92px;
     
         border: 1px solid var(--social-icon-grey);
         border-radius: 4px;
     
         transition: border var(--timing-function);
-    }
-
-    &__item+.clients__item {
-        margin-left: 29px;
     }
 
     &__item {
@@ -41,4 +38,20 @@
             fill: var(--accent-color);
         }
     }
+}
+
+@media screen and (min-width: 1200px) {
+    .clients {
+    
+            &__list {
+                font-size: 0;
+                display: flex;
+                flex-wrap: nowrap;
+                gap: 0;
+            }
+            
+        &__item+.clients__item {
+            margin-left: 29px;
+        }
+}
 }

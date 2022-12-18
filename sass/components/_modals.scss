@@ -20,10 +20,6 @@
         }
     }
 
-
-
-
-
 .modal {
     position: absolute;
     top: 50%;
@@ -249,4 +245,17 @@
     text-align: center;
     letter-spacing: 0.06em;
     box-shadow: var(--modal-button-shadow);
+}
+
+@media screen and (max-width: 1199px) {
+    .modal{
+    width: 450px;
+    } 
+
+    .checkbox{
+        &-label {
+                font-size: 12px;
+                letter-spacing: 0.03em;
+        }
+    }
 }
