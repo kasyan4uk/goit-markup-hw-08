@@ -322,6 +322,7 @@ header {
 
 .mobile-social {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 .mobile-social__item {
@@ -825,7 +826,27 @@ header {
   right: 28px;
 }
 
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
+  .sign {
+    margin: auto;
+  }
+  .sign__email {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .sign__button {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-left: auto;
+  }
+  .sign__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container-footer {
     display: flex;
     flex-wrap: wrap;
@@ -835,6 +856,19 @@ header {
     margin-left: 76px;
   }
   .sign {
+    margin: auto;
+  }
+  .sign__email {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .sign__button {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-left: auto;
+  }
+  .sign__list {
     margin: auto;
   }
 }
@@ -965,7 +999,7 @@ header {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--timing-function);
-  width: 528px;
+  max-width: 528px;
   min-height: 581px;
   background-color: var(--background-color);
   border-radius: 4px;
@@ -1163,7 +1197,7 @@ header {
 
 @media screen and (max-width: 1199px) {
   .modal {
-    width: 450px;
+    max-width: 450px;
   }
   .checkbox-label {
     font-size: 12px;

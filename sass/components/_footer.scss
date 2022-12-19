@@ -163,8 +163,33 @@
 
 
 }
+    @media screen and (max-width: 767px ) {
+        .sign {
+                margin: auto;
 
-        @media screen and (min-width: 767px) and (max-width: 1199px) {
+            &__email {
+                margin: auto;
+                margin-bottom: 20px;
+            }
+        
+                &__button {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: auto;
+                    margin-left: auto;
+                    }
+
+                &__list {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin: auto;
+                            
+                }
+        
+            }}
+        
+    
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
             .container-footer {
                 display: flex;
                 flex-wrap: wrap;
@@ -175,9 +200,27 @@
                 margin-left: 76px;
             }
     
-            .sign {
-                margin: auto;
-            }
+                        .sign {
+                            margin: auto;
+            
+                            &__email {
+                                margin: auto;
+                                margin-bottom: 20px;
+                            }
+            
+                            &__button {
+                                display: flex;
+                                flex-wrap: wrap;
+                                margin: auto;
+                                margin-left: auto;
+                            }
+            
+                            &__list {
+                                margin: auto;
+            
+                            }
+            
+                        }
     
         }
 
